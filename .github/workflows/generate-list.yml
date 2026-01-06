@@ -48,7 +48,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Build list
-        run: ipython convert.ipy
+        run: python convert.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
