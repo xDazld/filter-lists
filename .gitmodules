@@ -1,4 +1,0 @@
-[submodule "test-lists"]
-	path = test-lists
-	url = https://github.com/citizenlab/test-lists.git
-	branch = master

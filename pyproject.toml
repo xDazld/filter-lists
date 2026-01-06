@@ -1,0 +1,16 @@
+[project]
+name = "filter-lists"
+version = "0.1.0"
+description = "Generates filter lists from various sources for AdGuard Home."
+readme = "README.txt"
+requires-python = ">=3.14"
+dependencies = [
+    "pandas>=2.3.3",
+]
+
+[dependency-groups]
+dev = [
+    "pyrefly>=0.47.0",
+    "ruff>=0.14.10",
+    "ty>=0.0.9",
+]
