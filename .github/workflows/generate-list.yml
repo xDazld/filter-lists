@@ -46,8 +46,10 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install the project
         run: uv sync
-      - name: Build list
+      - name: Build citizen lab list
         run: uv run python citizenlab.py
+      - name: Build indie wiki list
+        run: uv run python indiewiki.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
