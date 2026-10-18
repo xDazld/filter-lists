@@ -5,8 +5,7 @@ import pandas
 
 def main():
     redirect_list = pandas.read_json(
-        "https://raw.githubusercontent.com/KevinPayravi/indie-wiki-buddy/refs"
-        "/heads/main/data/sitesEN.json").convert_dtypes()
+        "https://raw.githubusercontent.com/IndieWikiBuddy/indie-wiki-buddy/refs/heads/main/data/data.json").convert_dtypes()
     rules = [
         f"{origin['origin_base_url']}^$dnsrewrite={row['destination_base_url'].partition('/')[0]}\n"
         for _, row
